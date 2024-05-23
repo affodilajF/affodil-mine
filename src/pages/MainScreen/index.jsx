@@ -5,7 +5,7 @@ import ContactIcon from "../../components/ContactIcon";
 export default function MainScreen() {
   return (
     <div className="bg-bgwhite">
-      <div className="px-5 md:px-8 lg:px-16 relative overflow-hidden ">
+      <div className="px-5 md:px-8 lg:px-14 relative overflow-hidden ">
         <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px]"></div>
 
         <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] left-[-200px] blur-[90px]"></div>
@@ -52,6 +52,7 @@ export default function MainScreen() {
 
           <div className="flex flex-wrap justify-center pt-2">
             <Card
+              deployedlink="https://affodilajf.github.io/static-web-innisfree/"
               title="Innisfree Greentea"
               isDeployed={true}
               imagepath="src\assets\innisfree2.png"
@@ -74,6 +75,7 @@ export default function MainScreen() {
               imagepath="src\assets\api.png"
               type="College Project | On Going"
               borderColor=" border-black-100"
+              // deployedlink="https://affodilajf.github.io/static-web-innisfree/"
               description={
                 <>
                   As a <span className="font-bold">backend developer</span>, i
@@ -140,11 +142,12 @@ function Card({
   imagepath,
   type,
   borderColor,
+  deployedlink,
 }) {
   return (
-    <div className="xs:pt-10">
+    <div className="p-2">
       <div
-        className={`flex flex-row bg-white-40 p-4 lg:m-6 rounded-2xl border max-w-lg space-around border-${borderColor} transition-all duration-300 ease-in-out hover:scale-105 `}
+        className={`flex flex-row bg-white-40 p-4 lg:m-4 rounded-2xl border max-w-lg space-around border-${borderColor} transition-all duration-300 ease-in-out hover:scale-105 `}
       >
         <div className="flex flex-col items-center flex-1 p-3">
           <p className="font-bold text-purple-1 text-xl flex-5">{title}</p>
@@ -159,12 +162,14 @@ function Card({
             {description}
           </p>
 
-          <div className="flex flex-row items-center pt-5">
+          <div className="flex flex-row items-center ">
             {isDeployed ? (
-              <div className="bg-purple-4 pr-4 pl-4 pt-1 pb-1 rounded-3xl border border-black-100 font-bold text-purple-1 mr-2">
-                {" "}
-                <a className="xs:text-xs">Click here!</a>{" "}
-              </div>
+              <a
+                href={deployedlink}
+                className="bg-purple-4 px-6 py-1  rounded-3xl border border-black-100 font-bold text-purple-1 mr-2 flex items-center justify-center text-xs"
+              >
+                Click here!
+              </a>
             ) : null}
 
             <div className="inline-block bg-white-40 rounded-full border border-white-100 ">
@@ -194,18 +199,6 @@ function Name() {
         <a className="text-4xl font-bold text-purple-2 mb-4">
           Affodilaj Fadil.
         </a>
-      </div>
-    </div>
-  );
-}
-
-function SectionName({ title, bgcolor, textcolor }) {
-  return (
-    <div>
-      <div
-        className={`text-${textcolor} bg-${bgcolor} pr-12 pl-12 pt-2 pb-2 rounded-3xl border border-black-100 font-bold`}
-      >
-        <p> {title} </p>
       </div>
     </div>
   );
