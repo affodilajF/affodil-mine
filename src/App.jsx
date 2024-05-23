@@ -43,17 +43,22 @@ import viteLogo from "/vite.svg";
 // export default App
 
 import "./App.css";
-// import Navbar from "./components/Navbar";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainScreen from "./pages/MainScreen/index";
 
 function App() {
   return (
-    // <Router>
-    <div className={`container`}>
-      {/* <Navbar /> */}
-      <MainScreen />
-    </div>
+    <Router>
+      <div className={`container`}>
+        <MainScreen />
+      </div>
+      <Routes>
+        <Route path="/" element={""} />
+        <Route path="/about" element={""} />
+        <Route path="/projects" element={""} />
+        <Route path="/technologies" element={""} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -25,14 +25,17 @@ export default {
         1: "rgba(157, 102, 245, 0.75)",
         2: "rgba(102, 108, 245, 0.75)",
         3: "rgba(102, 108, 245, 0.30)",
+        4:"rgba(58, 25, 101, 0.62)",
       },
       black: {
         100: "#000000",
+        50: "rgba(0, 0, 0, 0.5)",
       },
     },
   },
   plugins: [
-    // require("daisyui"),
+    // eslint-disable-next-line no-undef
+    require("daisyui"),
     // daisyui,
     // eslint-disable-next-line no-undef
     // require("@tailwindcss/typography")

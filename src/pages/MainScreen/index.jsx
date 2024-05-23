@@ -1,19 +1,28 @@
 import ContactIcon from "../../components/ContactIcon";
+import Navbar from "../../components/Navbar";
+import { StickyNavbar } from "../../components/StickyNavbar";
 
 // import { Center, Image, Box } from "@chakra-ui/react";
 
 export default function MainScreen() {
+  // return <StickyNavbar content={ <Screen />} />;
+  return <Screen />;
+}
+
+// export default function MainScreen() {
+const Screen = () => {
   return (
     <div className="bg-bgwhite">
-      <div className="px-5 md:px-8 lg:px-14 relative overflow-hidden ">
-        <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px]"></div>
+      <Navbar />
+      <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px]"></div>
 
-        <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] left-[-200px] blur-[90px]"></div>
+      <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] left-[-200px] blur-[90px]"></div>
 
-        <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-3 rounded-full absolute top-[100px] right-[-200px] blur-[90px]"></div>
+      <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-3 rounded-full absolute top-[100px] right-[-200px] blur-[90px]"></div>
 
-        <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[550px] left-[-200px] blur-[90px]"></div>
+      <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[550px] left-[-200px] blur-[90px]"></div>
 
+      <div className="px-5 md:px-8 lg:px-14 relative">
         <div className="about relative">
           <div className="pt-20 ">
             <Name />
@@ -133,7 +142,7 @@ export default function MainScreen() {
       </div>
     </div>
   );
-}
+};
 
 function Card({
   title,
@@ -147,7 +156,7 @@ function Card({
   return (
     <div className="p-2">
       <div
-        className={`flex flex-row bg-white-40 p-4 lg:m-4 rounded-2xl border max-w-lg space-around border-${borderColor} transition-all duration-300 ease-in-out hover:scale-105 `}
+        className={`flex flex-row bg-white-40 p-3.5 lg:m-4 rounded-2xl border max-w-lg space-around border-${borderColor} transition-all duration-300 ease-in-out hover:scale-105 `}
       >
         <div className="flex flex-col items-center flex-1 p-3">
           <p className="font-bold text-purple-1 text-xl flex-5">{title}</p>
