@@ -2,17 +2,9 @@
 
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  // const toggle_change = () => {
-  //   theme == "light" ? setTheme("dark") : setTheme("light");
-  // };
+const Navbar = ({ scrollToDiv }) => {
   return (
-    // <div className="navbar bg-base-100">
-    // <div className="navbar bg-base-100 px-4 md:px-8 lg:px-16 sticky top-0 z-10">
-    // <div className="navbar backdrop-blur-sm px-4 md:px-8 lg:px-16 sticky top-0 z-10">
     <div className="navbar backdrop-blur-sm bg-bgpurple-4 px-4 md:px-8 lg:px-16 sticky top-0 z-10 border-b  border-purple-3">
-      {/* // <div className="navbar backdrop-blur-sm bg-bgpurple-4 px-4 md:px-8 lg:px-16 sticky top-0 z-10"> */}
-
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -65,7 +57,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1  text-white-100">
-          <li>
+          <li
+            onClick={() => scrollToDiv("about")}
+            className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
+          >
             <Link
               to="/about"
               style={{ textDecoration: "none", color: "inherit" }}
@@ -73,7 +68,10 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
+          <li
+            onClick={() => scrollToDiv("projects")}
+            className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
+          >
             <Link
               to="/projects"
               style={{ textDecoration: "none", color: "inherit" }}
@@ -81,9 +79,12 @@ const Navbar = () => {
               Projects
             </Link>
           </li>{" "}
-          <li>
+          <li
+            onClick={() => scrollToDiv("techstack")}
+            className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
+          >
             <Link
-              to="/technologies"
+              to="/techstack"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               Technologies
