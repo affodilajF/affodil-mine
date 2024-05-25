@@ -8,8 +8,8 @@ const Navbar = ({ scrollToDiv }) => {
     <div className="navbar backdrop-blur-sm bg-bgpurple-4 px-4 md:px-8 lg:px-16 sticky top-0 z-10 border-b  border-purple-3">
       <div className="md:navbar-center md:navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn-ghost lg:hidden">
-            <div className="pr-2">
+          <div tabIndex={0} role="button" className="lg:hidden">
+            <div className="mr-2">
               <img src={menuicon} alt="" className="h-7 w-7" />
             </div>
           </div>

@@ -1,6 +1,6 @@
 export default function CardCard() {
   return (
-    <div className="p-2 lg:animate-bounce">
+    <div className="p-2 md:animate-bounce">
       <div
         className={`p-20 flex flex-col  bg-white-40 lg:m-4 rounded-2xl border max-w-lg space-around border-white-100 transition-all duration-300 ease-in-out hover:scale-105 `}
       >

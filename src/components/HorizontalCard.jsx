@@ -35,7 +35,7 @@ export default function HorizontalCard({
               <a
                 href={deployedlink}
                 style={{ fontSize: "0.6rem" }}
-                className="animate-bounce bg-purple-4 px-6 py-1  rounded-2xl border border-black-100 font-bold text-purple-1 mr-2 flex items-center justify-center"
+                className=" animate-bounce bg-purple-4 px-6 py-1  rounded-2xl border border-black-100 font-bold text-purple-1 mr-2 flex items-center justify-center"
               >
                 Click here!
               </a>
