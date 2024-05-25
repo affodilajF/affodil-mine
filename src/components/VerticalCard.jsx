@@ -17,7 +17,9 @@ export default function VerticalCard({
         className={` flex flex-col  bg-white-40 p-4 lg:m-4 rounded-2xl border max-w-lg space-around border-${borderColor} transition-all duration-300 ease-in-out hover:scale-105 `}
       >
         <div className="flex flex-col items-center flex-1 p-3">
-          <p className="font-bold text-purple-1 text-xl flex-5">{title}</p>
+          <p className="font-bold text-purple-1 text-lg lg:text-xl flex-5">
+            {title}
+          </p>
           <p style={{ fontSize: "0.5rem" }} className="text-xs flex-5">
             {type}
           </p>

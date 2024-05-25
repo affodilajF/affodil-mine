@@ -43,7 +43,7 @@ const Navbar = ({ scrollToDiv }) => {
             </li>
           </ul>
         </div>
-        <a className="sm:text-lg text-xs text-white-100">
+        <a className="sm:text-lg text-md text-white-100">
           {" "}
           Affodil | Mobile | Web{" "}
         </a>
