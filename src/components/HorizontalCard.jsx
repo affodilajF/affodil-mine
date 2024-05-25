@@ -1,3 +1,4 @@
+import githubicon from "../assets/github-icons.png";
 export default function HorizontalCard({
   title,
   description,
@@ -33,7 +34,8 @@ export default function HorizontalCard({
             {isDeployed ? (
               <a
                 href={deployedlink}
-                className="animate-bounce bg-purple-4 px-6 py-1  rounded-3xl border border-black-100 font-bold text-purple-1 mr-2 flex items-center justify-center text-xs"
+                style={{ fontSize: "0.6rem" }}
+                className="animate-bounce bg-purple-4 px-6 py-1  rounded-2xl border border-black-100 font-bold text-purple-1 mr-2 flex items-center justify-center"
               >
                 Click here!
               </a>
@@ -44,7 +46,7 @@ export default function HorizontalCard({
                 <a href={githubLink}>
                   <img
                     className="h-8 w-8 p-2"
-                    src="src\assets\github-icons.png"
+                    src={githubicon}
                     alt="GitHub Icon"
                   />
                 </a>

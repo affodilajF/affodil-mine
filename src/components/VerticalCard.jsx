@@ -1,3 +1,4 @@
+import githubicon from "../assets/github-icons.png";
 export default function VerticalCard({
   title,
   description,
@@ -35,7 +36,7 @@ export default function VerticalCard({
               <a href={githubLink}>
                 <img
                   className="h-8 w-8 p-2"
-                  src="src\assets\github-icons.png"
+                  src={githubicon}
                   alt="GitHub Icon"
                 />
               </a>
