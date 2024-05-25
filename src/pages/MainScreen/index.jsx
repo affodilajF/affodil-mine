@@ -29,7 +29,7 @@ const Screen = () => {
   };
 
   return (
-    <div className="bg-bgwhite relative overflow-y-hidden">
+    <div className="bg-bgwhite relative">
       <Navbar scrollToDiv={scrollToDiv} />
 
       <div className="circlePosition h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px] w-[280px] sm:w-[380px] md:w-[400px]"></div>
@@ -46,7 +46,7 @@ const Screen = () => {
 
       <div className="circlePosition  h-[400px] bg-bgpurple-3 rounded-full absolute top-[1800px] left-[100px] blur-[90px] sm:w-[380px] md:w-[420px]"></div>
 
-      <div className="circlePosition w-[620px] h-[600px] bg-bgpurple-5 rounded-full absolute bottom-[-300px] right-[0px] blur-[90px]"></div>
+      <div className="circlePosition w-[420px] h-[600px] bg-bgpurple-5 rounded-full absolute bottom-[0px] right-[0px] blur-[90px]"></div>
 
       <div id="about" className="px-5 md:px-8 lg:px-14 relative ">
         <div className="about relative">
