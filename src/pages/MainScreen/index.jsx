@@ -8,6 +8,14 @@ import UsedTechStack from "../../components/UsedTechStack";
 import VerticalCard from "../../components/VerticalCard";
 import React, { useRef } from "react";
 
+import api from '../../assets/api.png';
+import botica from "../../assets/botica.png";
+import fitcal from "../../assets/fitcal.png";
+import innisfree from "../../assets/innisfree2.png";
+import hotel from "../../assets/hotelapp.png";
+import art1 from "../../assets/art1.png";
+import art2 from "../../assets/art2.png";
+
 export default function MainScreen() {
   return <Screen />;
 }
@@ -102,7 +110,7 @@ const Screen = () => {
               deployedlink="https://affodilajf.github.io/static-web-innisfree/"
               title="Innisfree Greentea"
               isDeployed={true}
-              imagepath="src\assets\innisfree2.png"
+              imagepath={innisfree}
               type="College Project"
               borderColor=" border-white-100"
               isGithub={true}
@@ -121,7 +129,7 @@ const Screen = () => {
             <HorizontalCard
               title="KUR Jogja"
               isDeployed={false}
-              imagepath="src\assets\api.png"
+              imagepath={api}
               type="College Project | On Going"
               borderColor=" border-black-100"
               // deployedlink="https://affodilajf.github.io/static-web-innisfree/"
@@ -148,7 +156,7 @@ const Screen = () => {
               githubLink="https://github.com/affodilajF/HotelBooking-App"
               title="HotelBook-Ku"
               isDeployed={false}
-              imagepath="src\assets\hotelapp.png"
+              imagepath={hotel}
               type="Personal Project | On Going"
               borderColor=" border-black-100"
               description={
@@ -167,7 +175,7 @@ const Screen = () => {
               figmalink="https://www.figma.com/proto/ASncFchcEv1AJdl38jAsaq/Untitled?node-id=1-216&t=urH0LPrZWi1L8Gye-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A216"
               title="ChatterBotica"
               isDeployed={false}
-              imagepath="src\assets\botica.png"
+              imagepath={botica}
               type="Personal Project | On Going"
               borderColor=" border-white-100"
               description={
@@ -223,10 +231,10 @@ const Screen = () => {
 
           <div className="flex flex-wrap justify-center pt-2">
             <ArtCard
-              imagepath="src\assets\art1.png"
+              imagepath={art1}
               borderColor={"white-100"}
             />
-            <ArtCard imagepath="src\assets\art2.png" borderColor="black-100" />
+            <ArtCard imagepath={art2} borderColor="black-100" />
           </div>
 
           <div
