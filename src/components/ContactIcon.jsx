@@ -1,3 +1,8 @@
+import githubicon from "../assets/github-icons.png";
+import igicon from "../assets/instagram.png";
+import behanceicon from "../assets/behance.png";
+import linkedinicon from "../assets/linkedin-icons.png";
+
 export default function ContactIcon() {
   return (
     <div>
@@ -5,7 +10,7 @@ export default function ContactIcon() {
         <a href="https://www.linkedin.com/in/fadhila-a-salsabilla/">
           <img
             className="h-10 w-10 p-2.5"
-            src="src\assets\linkedin-icons.png"
+            src={linkedinicon}
             alt="GitHub Icon"
           />
         </a>
@@ -14,7 +19,7 @@ export default function ContactIcon() {
         <a href="https://github.com/affodilajF">
           <img
             className="h-10 w-10 p-2.5"
-            src="src\assets\github-icons.png"
+            src={githubicon}
             alt="GitHub Icon"
           />
         </a>
@@ -23,7 +28,7 @@ export default function ContactIcon() {
         <a href="https://instagram.com/affodilaj">
           <img
             className="h-10 w-10 p-2.5"
-            src="src\assets\instagram.png"
+            src={igicon}
             alt="GitHub Icon"
           />
         </a>
@@ -32,7 +37,7 @@ export default function ContactIcon() {
         <a href="https://www.behance.net/affodilaj">
           <img
             className="h-10 w-10 p-2.5"
-            src="src\assets\behance.png"
+            src={behanceicon}
             alt="GitHub Icon"
           />
         </a>

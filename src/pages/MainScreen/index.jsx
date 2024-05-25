@@ -8,7 +8,7 @@ import UsedTechStack from "../../components/UsedTechStack";
 import VerticalCard from "../../components/VerticalCard";
 import React, { useRef } from "react";
 
-import api from '../../assets/api.png';
+import api from "../../assets/api.png";
 import botica from "../../assets/botica.png";
 import fitcal from "../../assets/fitcal.png";
 import innisfree from "../../assets/innisfree2.png";
@@ -21,20 +21,6 @@ export default function MainScreen() {
 }
 
 const Screen = () => {
-  // const targetDivRef = useRef(null);
-
-  // // Fungsi untuk menavigasi ke div target
-  // const scrollToDiv = () => {
-  //   // Periksa apakah referensi ke elemen div ada
-  //   if (targetDivRef.current) {
-  //     // Lakukan navigasi ke div dengan menggunakan metode scrollIntoView
-  //     targetDivRef.current.scrollIntoView({
-  //       behavior: "smooth",
-  //       block: "start",
-  //     });
-  //   }
-  // };
-
   const scrollToDiv = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -108,7 +94,7 @@ const Screen = () => {
           <div className="flex flex-wrap justify-center pt-2">
             <HorizontalCard
               deployedlink="https://affodilajf.github.io/static-web-innisfree/"
-              title="Innisfree Greentea"
+              title="Innisfree"
               isDeployed={true}
               imagepath={innisfree}
               type="College Project"
@@ -200,7 +186,7 @@ const Screen = () => {
               githubLink="https://github.com/affodilajF/FitCal-AplikasiCalorieTracker_UAS"
               title="FitCal"
               isDeployed={false}
-              imagepath="src\assets\fitcal.png"
+              imagepath={fitcal}
               type="College Project"
               borderColor=" border-white-100"
               description={
@@ -230,10 +216,7 @@ const Screen = () => {
           </div>
 
           <div className="flex flex-wrap justify-center pt-2">
-            <ArtCard
-              imagepath={art1}
-              borderColor={"white-100"}
-            />
+            <ArtCard imagepath={art1} borderColor={"white-100"} />
             <ArtCard imagepath={art2} borderColor="black-100" />
           </div>
 
