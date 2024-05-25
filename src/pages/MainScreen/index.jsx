@@ -40,13 +40,11 @@ const Screen = () => {
 
       <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[550px] left-[-200px] blur-[90px]"></div>
 
-      <div className="circlePosition h-[700px]  bg-bgpurple-5 rounded-full absolute top-[1550px] right-[150] blur-[90px] w-[280px] sm:w-[580px] md:w-[820px]"></div>
+      <div className="circlePosition h-[700px]  bg-bgpurple-5 rounded-full absolute top-[1550px] right-[150] blur-[90px] sm:w-[580px] md:w-[820px]"></div>
 
       <div className="circlePosition w-[620px] h-[600px] bg-bgpurple-1 rounded-full absolute top-[2000px] left-[-300px] blur-[90px]"></div>
 
-      <div className="circlePosition  h-[400px] bg-bgpurple-3 rounded-full absolute top-[1800px] left-[100px] blur-[90px] w-[250px] sm:w-[380px] md:w-[420px]"></div>
-
-      {/* <div className="circlePosition w-[620px] h-[600px] bg-bgpurple-5 rounded-full absolute bottom-[-100px] right-[200px] blur-[90px]"></div> */}
+      <div className="circlePosition  h-[400px] bg-bgpurple-3 rounded-full absolute top-[1800px] left-[100px] blur-[90px] sm:w-[380px] md:w-[420px]"></div>
 
       <div className="circlePosition w-[620px] h-[600px] bg-bgpurple-5 rounded-full absolute bottom-[-300px] right-[0px] blur-[90px]"></div>
 
