@@ -5,7 +5,7 @@ import menuicon from "../assets/menuicon.png";
 
 const Navbar = ({ scrollToDiv }) => {
   return (
-    <div className="navbar backdrop-blur-sm bg-bgpurple-4 px-4 md:px-8 lg:px-16 sticky top-0 z-10 border-b  border-purple-3">
+    <div className=" navbar backdrop-blur-sm bg-bgpurple-4 px-4 md:px-8 lg:px-16 sticky top-0 z-10 border-b  border-purple-3">
       <div className="md:navbar-center md:navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="lg:hidden">

@@ -10,6 +10,15 @@ body {
 
 :root {
   overflow-x: hidden;
+  /* overflow-x: "hidden"; */
+  /* white-space: nowrap; */
+  /* width: "100%";
+  /* position: "relative"; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   /* overflow-y: hidden; */
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
