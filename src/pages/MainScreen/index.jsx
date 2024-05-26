@@ -36,6 +36,8 @@ const Screen = () => {
 
       <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] left-[-200px] blur-[90px]"></div>
 
+      <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] right-[-200px] blur-[90px]"></div>
+
       <div className="circlePosition w-[320px] h-[300px] bg-bgpurple-3 rounded-full absolute top-[1000px] right-[0px] blur-[90px] "></div>
 
       <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[550px] left-[-200px] blur-[90px]"></div>
