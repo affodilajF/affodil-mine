@@ -68,9 +68,9 @@ const Screen = () => {
               </span>
               <br></br>
               <br></br>
-              However, my curiosity and eagerness to learn extend far beyond
-              these areas. I am eager to embrace new opportunities and excel in
-              diverse domains.
+              Yet, my thirst for knowledge extends beyond these realms. I am
+              driven to explore diverse domains, eager to seize new
+              opportunities and excel in varied fields. As a growing interest in Data Analysis and Software Testing. 
             </a>
           </div>
           <div className="mt-5">
