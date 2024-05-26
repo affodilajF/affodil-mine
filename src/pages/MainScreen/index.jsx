@@ -70,7 +70,9 @@ const Screen = () => {
               <br></br>
               Yet, my thirst for knowledge extends beyond these realms. I am
               driven to explore diverse domains, eager to seize new
-              opportunities and excel in varied fields. As a growing interest in Data Analysis and Software Testing. 
+              opportunities and excel in varied fields.
+              <br></br>
+              As a growing interest in Data Analysis and Software Testing.
             </a>
           </div>
           <div className="mt-5">
