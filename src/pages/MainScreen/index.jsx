@@ -106,7 +106,7 @@ const Screen = () => {
             borderColor=" border-white-100"
             isGithub={true}
             githubLink="https://github.com/affodilajF/static-web-innisfree/"
-            animation="fade-left"
+            animation="fade-right"
             description={
               <>
                 Online shopping web. The website has two versions, static web
@@ -124,7 +124,7 @@ const Screen = () => {
             imagepath={api}
             type="College Project | On Going"
             borderColor=" border-black-100"
-            animation="fade-left"
+            animation="fade-right"
             // deployedlink="https://affodilajf.github.io/static-web-innisfree/"
             description={
               <>
@@ -192,7 +192,7 @@ const Screen = () => {
 
           <VerticalCard
             githubLink="https://github.com/affodilajF/FitCal-AplikasiCalorieTracker_UAS"
-            animation="fade-left"
+            animation="fade-right"
             title="FitCal"
             isDeployed={false}
             imagepath={fitcal}
