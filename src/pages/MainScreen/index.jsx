@@ -192,7 +192,7 @@ const Screen = () => {
 
           <VerticalCard
             githubLink="https://github.com/affodilajF/FitCal-AplikasiCalorieTracker_UAS"
-            animation="fade-right"
+            animation="zoom-in-down"
             title="FitCal"
             isDeployed={false}
             imagepath={fitcal}
