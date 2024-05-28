@@ -10,9 +10,10 @@ export default function VerticalCard({
   githubLink,
   isFigma,
   figmalink,
+  animation
 }) {
   return (
-    <div className="p-2">
+    <div className="p-2" data-aos={animation} data-aos-duration="1200">
       <div
         className={` flex flex-col  bg-white-40 p-4 lg:m-4 rounded-2xl border max-w-lg space-around border-${borderColor} transition-all duration-300 ease-in-out hover:scale-105 `}
       >

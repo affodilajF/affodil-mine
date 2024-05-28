@@ -6,7 +6,6 @@ import InterestingTechStack from "../../components/InterestingTechStack";
 import Navbar from "../../components/Navbar";
 import UsedTechStack from "../../components/UsedTechStack";
 import VerticalCard from "../../components/VerticalCard";
-import React, { useRef } from "react";
 
 import api from "../../assets/api.png";
 import botica from "../../assets/botica.png";
@@ -32,28 +31,52 @@ const Screen = () => {
     <div className="bg-bgwhite relative">
       <Navbar scrollToDiv={scrollToDiv} />
 
-      <div className="circlePosition h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px] w-[150px] sm:w-[380px] md:w-[400px]"></div>
+      <div
+        className="circlePosition h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px] w-[150px] sm:w-[380px] md:w-[400px]"
+        data-aos="fade-right"
+      ></div>
 
-      <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] left-[-200px] blur-[90px]"></div>
+      <div
+        className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] left-[-200px] blur-[90px]"
+        data-aos="fade-right"
+      ></div>
 
-      <div className="circlePosition w-[320px] h-[300px] bg-bgpurple-3 rounded-full absolute top-[1000px] right-[0px] blur-[90px] "></div>
+      <div
+        className="circlePosition w-[320px] h-[300px] bg-bgpurple-3 rounded-full absolute top-[1000px] right-[0px] blur-[90px] "
+        data-aos="fade-right"
+      ></div>
 
-      <div className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[550px] left-[-200px] blur-[90px]"></div>
+      <div
+        className="circlePosition w-[420px] h-[300px] bg-bgpurple-2 rounded-full absolute top-[550px] left-[-200px] blur-[90px]"
+        data-aos="fade-right"
+      ></div>
 
-      <div className="circlePosition h-[700px]  bg-bgpurple-5 rounded-full absolute top-[1550px] right-[150] blur-[90px] sm:w-[580px] md:w-[820px]"></div>
+      <div
+        className="circlePosition h-[700px]  bg-bgpurple-5 rounded-full absolute top-[1550px] right-[150] blur-[90px] sm:w-[580px] md:w-[820px]"
+        data-aos="fade-right"
+      ></div>
 
-      <div className="circlePosition w-[520px] h-[600px] bg-bgpurple-1 rounded-full absolute top-[2000px] left-[-300px] blur-[90px]"></div>
+      <div
+        className="circlePosition w-[520px] h-[600px] bg-bgpurple-1 rounded-full absolute top-[2000px] left-[-300px] blur-[90px]"
+        data-aos="fade-right"
+      ></div>
 
-      <div className="circlePosition  h-[400px] bg-bgpurple-3 rounded-full absolute top-[1800px] left-[100px] blur-[90px] sm:w-[380px] md:w-[420px]"></div>
+      <div
+        className="circlePosition  h-[400px] bg-bgpurple-3 rounded-full absolute top-[1800px] left-[100px] blur-[90px] sm:w-[380px] md:w-[420px]"
+        data-aos="fade-right"
+      ></div>
 
-      <div className="circlePosition w-[620px] h-[600px] bg-bgpurple-5 rounded-full absolute bottom-[0px] right-[0px] blur-[90px]"></div>
+      <div
+        className="circlePosition w-[620px] h-[600px] bg-bgpurple-5 rounded-full absolute bottom-[0px] right-[0px] blur-[90px]"
+        data-aos="fade-right"
+      ></div>
 
       <div id="about" className="px-5 md:px-8 lg:px-14 relative ">
         <div className="about relative">
           <div className="pt-20 ">
             <Name />
           </div>
-          <div className="pt-6">
+          <div className="pt-6" data-aos="fade-right" data-aos-duration="1200">
             <a className="text-sm text-purple-1">
               An enthusiastic{" "}
               <span className="font-bold">Software Engineering</span>{" "}
@@ -85,6 +108,8 @@ const Screen = () => {
         <div
           id="projects"
           className="flex flex-col items-center justify-center h-full pt-16 space-y-4"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
         >
           <a className="text-md text-center text-purple-5">
             {" "}
@@ -105,6 +130,7 @@ const Screen = () => {
             borderColor=" border-white-100"
             isGithub={true}
             githubLink="https://github.com/affodilajF/static-web-innisfree/"
+            animation="fade-left"
             description={
               <>
                 Online shopping web. The website has two versions, static web
@@ -122,6 +148,7 @@ const Screen = () => {
             imagepath={api}
             type="College Project | On Going"
             borderColor=" border-black-100"
+            animation="fade-left"
             // deployedlink="https://affodilajf.github.io/static-web-innisfree/"
             description={
               <>
@@ -149,6 +176,7 @@ const Screen = () => {
             imagepath={hotel}
             type="Personal Project | On Going"
             borderColor=" border-black-100"
+            animation="fade-right"
             description={
               <>
                 Is a sleek and intuitive{" "}
@@ -163,6 +191,7 @@ const Screen = () => {
             githubLink="https://github.com/affodilajF/ChatterBotica-Android"
             figmalink="https://www.figma.com/proto/ASncFchcEv1AJdl38jAsaq/Untitled?node-id=1-216&t=urH0LPrZWi1L8Gye-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A216"
             title="ChatterBotica"
+            animation="fade-up"
             isDeployed={false}
             imagepath={botica}
             type="Personal Project | On Going"
@@ -187,6 +216,7 @@ const Screen = () => {
 
           <VerticalCard
             githubLink="https://github.com/affodilajF/FitCal-AplikasiCalorieTracker_UAS"
+            animation="fade-left"
             title="FitCal"
             isDeployed={false}
             imagepath={fitcal}
@@ -266,7 +296,10 @@ function Footer() {
 
 function Name() {
   return (
-    <div className="inline-block bg-white-40 p-4 rounded-2xl border border-white-100  animate-bounce fill-mode-forwards ... ">
+    <div
+      data-aos="zoom-in"
+      className="inline-block bg-white-40 p-4 rounded-2xl border border-white-100  animate-bounce fill-mode-forwards ... "
+    >
       <a className="text-4xl font-bold text-purple-6 mb-4">Affodilaj Fadil.</a>
     </div>
   );

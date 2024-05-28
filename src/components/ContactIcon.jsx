@@ -5,7 +5,7 @@ import linkedinicon from "../assets/linkedin-icons.png";
 
 export default function ContactIcon() {
   return (
-    <div>
+    <div data-aos="fade-right" data-aos-duration="1200">
       <div className="mr-4 inline-block bg-white-40 rounded-full border border-black-100  transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ...">
         <a href="https://www.linkedin.com/in/fadhila-a-salsabilla/">
           <img
@@ -17,20 +17,12 @@ export default function ContactIcon() {
       </div>
       <div className="mr-4 inline-block bg-white-40 rounded-full border border-black-100 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... ">
         <a href="https://github.com/affodilajF">
-          <img
-            className="h-10 w-10 p-2.5"
-            src={githubicon}
-            alt="GitHub Icon"
-          />
+          <img className="h-10 w-10 p-2.5" src={githubicon} alt="GitHub Icon" />
         </a>
       </div>
       <div className="mr-4 inline-block bg-white-40 rounded-full border border-black-100 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... ">
         <a href="https://instagram.com/affodilaj">
-          <img
-            className="h-10 w-10 p-2.5"
-            src={igicon}
-            alt="GitHub Icon"
-          />
+          <img className="h-10 w-10 p-2.5" src={igicon} alt="GitHub Icon" />
         </a>
       </div>
       <div className="mr-4 inline-block bg-white-40 rounded-full border border-black-100 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... ">
