@@ -14,6 +14,7 @@ import innisfree from "../../assets/innisfree2.png";
 import hotel from "../../assets/hotelapp.png";
 import art1 from "../../assets/art1.png";
 import art2 from "../../assets/art2.png";
+import data from "../../assets/data.png";
 
 export default function MainScreen() {
   return <Screen />;
@@ -209,6 +210,31 @@ const Screen = () => {
                 </span>{" "}
                 <br></br>
                 <br></br>
+              </>
+            }
+          />
+        </div>
+
+        <div className="flex flex-col items-center justify-center h-full pt-14 space-y-4">
+          <div className="text-purple-1 bg-white-40 pr-12 pl-12 pt-2 pb-2 rounded-3xl border border-black-100 font-bold">
+            <p> Data </p>
+          </div>
+        </div>
+
+        <div className="flex justify-center">
+          <HorizontalCard
+            title="Prediction of Medical Insurance Charges using Multiple Linear Regression Model"
+            // isDeployed={false}
+            imagepath={data}
+            type="College Project"
+            borderColor=" border-black-100"
+            animation="zoom-in-down"
+            isDeployed={true}
+            deployedlink="https://www.canva.com/design/DAGG-BL1mwo/OhKKMN9zV7ytaaOUaI3mbg/view?utm_content=DAGG-BL1mwo&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            description={
+              <>
+                Linear Regression Model for Medical Insurance Charges using
+                Python.
               </>
             }
           />

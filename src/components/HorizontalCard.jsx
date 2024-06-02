@@ -9,16 +9,19 @@ export default function HorizontalCard({
   deployedlink,
   isGithub,
   githubLink,
-  animation
+  animation,
 }) {
   return (
     <div className="p-2" data-aos={animation} data-aos-duration="1200">
-    {/* // <div className="p-2" data-aos="fade-left" data-aos-duration="1200"> */}
+      {/* // <div className="p-2" data-aos="fade-left" data-aos-duration="1200"> */}
       <div
         className={`flex flex-row  bg-white-40 p-3 lg:m-4 rounded-2xl border max-w-lg space-around border-${borderColor} transition-all duration-300 ease-in-out hover:scale-105 `}
       >
         <div className="flex flex-col items-center flex-1 p-3">
-          <p className="font-bold text-purple-1 text-lg lg:text-xl flex-6">
+          <p
+            style={{ textAlign: "center" }}
+            className="font-bold text-purple-1 text-lg lg:text-xl flex-6"
+          >
             {title}
           </p>
           <p style={{ fontSize: "0.5rem" }} className="text-xs flex-5">
@@ -35,6 +38,7 @@ export default function HorizontalCard({
           <div className="flex flex-row items-center ">
             {isDeployed ? (
               <a
+                target="_blank"
                 href={deployedlink}
                 style={{ fontSize: "0.6rem" }}
                 className=" animate-bounce bg-purple-4 px-6 py-1  rounded-2xl border border-black-100 font-bold text-purple-1 mr-2 flex items-center justify-center"
@@ -45,7 +49,7 @@ export default function HorizontalCard({
 
             <div className="inline-block bg-white-40 rounded-full border border-white-100 ">
               {isGithub ? (
-                <a href={githubLink}>
+                <a href={githubLink} target="_blank">
                   <img
                     className="h-8 w-8 p-2"
                     src={githubicon}
