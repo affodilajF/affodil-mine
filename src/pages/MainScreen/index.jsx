@@ -74,7 +74,7 @@ const Screen = () => {
               driven to explore diverse domains, eager to seize new
               opportunities and excel in varied fields.
               <br></br>
-              As a growing interest in Data Analysis and Software Testing.
+              As a growing interest in Data Science and Software Testing.
             </a>
           </div>
           <div className="mt-5">
