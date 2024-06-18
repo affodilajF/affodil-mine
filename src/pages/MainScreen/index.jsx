@@ -71,11 +71,23 @@ const Screen = () => {
               </span>
               <br></br>
               <br></br>
-              Yet, my thirst for knowledge extends beyond these realms. I am
-              driven to explore diverse domains, eager to seize new
-              opportunities and excel in varied fields.
+              Yet, as a growing interest in{" "}
+              <span className="italic font-semibold"> Data Science </span>, my
+              thirst for knowledge extends beyond these realms. I am driven to
+              explore diverse domains and eager to seize new opportunities.
               <br></br>
-              As a growing interest in Data Science and Software Testing.
+              <br></br>
+              <br></br>I am someone who enjoys{" "}
+              <span className="italic font-semibold">
+                drawing conclusions based on data in both inductive and
+                deductive manners{" "}
+              </span>
+              and{" "}
+              <span className="italic font-semibold">
+                providing reasons across various scenarios.
+              </span>
+              I then discuss these with peers to explore different viewpoints.
+              So, would you like to exchange ideas and judgments with me?
             </a>
           </div>
           <div className="mt-5">
