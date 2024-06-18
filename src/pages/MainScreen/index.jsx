@@ -67,7 +67,7 @@ const Screen = () => {
               <br></br>
               I'm keen to delve deeper into{" "}
               <span className="italic font-semibold">
-                Kotlin, ReactJS/React Native, and Golang.
+                Kotlin, ReactJS, and React Native.
               </span>
               <br></br>
               <br></br>
@@ -75,7 +75,6 @@ const Screen = () => {
               <span className="italic font-semibold"> Data Science </span>, my
               thirst for knowledge extends beyond these realms. I am driven to
               explore diverse domains and eager to seize new opportunities.
-              <br></br>
               <br></br>
               <br></br>I am someone who enjoys{" "}
               <span className="italic font-semibold">
@@ -86,8 +85,9 @@ const Screen = () => {
               <span className="italic font-semibold">
                 providing reasons across various scenarios.
               </span>
-              I then discuss these with peers to explore different viewpoints.
-              So, would you like to exchange ideas and judgments with me?
+              <br></br>I then discuss these with peers to explore different
+              viewpoints. So, would you like to exchange ideas and judgments
+              with me?
             </a>
           </div>
           <div className="mt-5">
