@@ -72,7 +72,7 @@ const Screen = () => {
               <br></br>
               <br></br>
               Yet, as a growing interest in{" "}
-              <span className="italic font-semibold"> Data Science </span>, my
+              <span className="italic font-semibold"> Data Science, </span> my
               thirst for knowledge extends beyond these realms. I am driven to
               explore diverse domains and eager to seize new opportunities.
               <br></br>
