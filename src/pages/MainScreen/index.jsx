@@ -15,6 +15,7 @@ import hotel from "../../assets/hotelapp.png";
 import art1 from "../../assets/art1.png";
 import art2 from "../../assets/art2.png";
 import data from "../../assets/data.png";
+//haha
 
 export default function MainScreen() {
   return <Screen />;
@@ -32,7 +33,7 @@ const Screen = () => {
     <div className="bg-bgwhite relative">
       <Navbar scrollToDiv={scrollToDiv} />
 
-      <div className="circlePositionsm bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px] w-[150px] sm:w-[380px] md:w-[400px]"></div>
+      <div className="circlePosition h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px] w-[150px] sm:w-[380px] md:w-[400px]"></div>
 
       <div className="circlePosition w-[420px] h-[400px] bg-bgpurple-1 rounded-full absolute top-[2px] left-[-200px] blur-[90px]"></div>
 
@@ -85,8 +86,9 @@ const Screen = () => {
               <span className="italic font-semibold">
                 providing reasons across various scenarios.
               </span>
-              I then discuss these with peers to explore different viewpoints.
-              So, would you like to exchange ideas and judgments with me?
+              <br></br>I then discuss these with peers to explore different
+              viewpoints. So, would you like to exchange ideas and judgments
+              with me?
             </a>
           </div>
           <div className="mt-5">
