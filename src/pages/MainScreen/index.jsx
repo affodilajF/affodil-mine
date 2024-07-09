@@ -60,15 +60,14 @@ const Screen = () => {
               <span className="font-bold">Software Engineering</span>{" "}
               undergraduate student at UGM, deeply passionate about <br></br>
               <span className="font-bold text-4xl animate-pulse">
-                mobile (Kotlin) and web development (Laravel and React JS),{" "}
+                mobile and web development,{" "}
               </span>
               <br></br>
-              as well as proficient in UI/UX and Visual Art.
+              mainly using Kotlin (android), Laravel (backend), adn ReactJS
+              (frontend).
               <br></br>
-              {/* I'm keen to delve deeper into{" "}
-              <span className="italic font-semibold">
-                Kotlin, ReactJS, and React Native.
-              </span> */}
+              Additionally, my expertise in UI/UX design and visual art enhances
+              the value of the products I create.
               <br></br>
               <br></br>
               Yet, as a growing interest in{" "}
