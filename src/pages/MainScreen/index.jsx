@@ -59,15 +59,15 @@ const Screen = () => {
               <span className="font-bold">Software Engineering</span>{" "}
               undergraduate student at UGM, deeply passionate about <br></br>
               <span className="font-bold text-4xl animate-pulse">
-                mobile and web development,{" "}
+                mobile (Kotlin) and web development (Laravel and React JS),{" "}
               </span>
               <br></br>
               as well as proficient in UI/UX and Visual Art.
               <br></br>
-              I'm keen to delve deeper into{" "}
+              {/* I'm keen to delve deeper into{" "}
               <span className="italic font-semibold">
                 Kotlin, ReactJS, and React Native.
-              </span>
+              </span> */}
               <br></br>
               <br></br>
               Yet, as a growing interest in{" "}
@@ -78,7 +78,8 @@ const Screen = () => {
               <br></br>
               <br></br>I am someone who enjoys{" "}
               <span className="italic font-semibold">
-                drawing conclusions based on data{" "}
+                drawing conclusions based on data in both inductive and
+                deductive manners{" "}
               </span>
               and{" "}
               <span className="italic font-semibold">
