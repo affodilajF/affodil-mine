@@ -63,7 +63,7 @@ const Screen = () => {
                 mobile and web development,{" "}
               </span>
               <br></br>
-              mainly using Kotlin (android), Laravel (backend), adn ReactJS
+              mainly using Kotlin (android), Laravel (backend), and ReactJS
               (frontend).
               <br></br>
               Additionally, my expertise in UI/UX design and visual art enhances
