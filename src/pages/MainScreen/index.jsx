@@ -74,20 +74,6 @@ const Screen = () => {
               <span className="italic font-semibold"> Data Science </span>, my
               thirst for knowledge extends beyond these realms. I am driven to
               explore diverse domains and eager to seize new opportunities.
-              <br></br>
-              <br></br>
-              <br></br>I am someone who enjoys{" "}
-              <span className="italic font-semibold">
-                drawing conclusions based on data in both inductive and
-                deductive manners{" "}
-              </span>
-              and{" "}
-              <span className="italic font-semibold">
-                providing reasons across various scenarios.
-              </span>
-              <br></br>I then discuss these with peers to explore different
-              viewpoints. So, would you like to exchange ideas and judgments
-              with me?
             </a>
           </div>
           <div className="mt-5">
