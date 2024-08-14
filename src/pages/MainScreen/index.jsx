@@ -176,7 +176,8 @@ const Screen = () => {
               <>
                 With Text-to-Speech and Speech-to-Text capabilities and powered
                 by the GPT model, it transforms smartphone into a{" "}
-                <span className="font-bold">conversational partner. </span>{" "}
+                <span className="font-bold">conversational partner. </span>
+                It also supports features such as image scanning & text extraction from images (using ML Kit), and PDF generation.{" "}
                 <br></br> <br></br>
                 Build in <span className="font-bold">
                   Kotlin
