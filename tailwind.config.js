@@ -6,20 +6,22 @@
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {},
     colors: {
+      // tokens that flip with the theme live in index.css
       white: {
-        100: "#ffffff",
-        40: "rgba(255, 255, 255, 0.4)",
+        100: "var(--c-white-100)",
+        40: "var(--c-white-40)",
       },
-      bgwhite: "#F1F1F1",
+      bgwhite: "var(--c-bgwhite)",
       purple: {
-        1: "#3D0C54",
-        2: "#4A3772",
+        1: "var(--c-purple-1)",
+        2: "var(--c-purple-2)",
         3: "#7B7DDC",
         4: "#AD85ED",
-        5: "#6433A1",
+        5: "var(--c-purple-5)",
         6: "#6C8FEB",
       },
       bgpurple: {
@@ -30,7 +32,7 @@ export default {
         5: "rgba(172, 121, 225, 0.25)",
       },
       black: {
-        100: "#000000",
+        100: "var(--c-black-100)",
         50: "rgba(0, 0, 0, 0.5)",
       },
       orange: {

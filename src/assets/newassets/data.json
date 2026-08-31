@@ -1,0 +1,190 @@
+{
+  "categories": [
+    "Software Development",
+    "Machine Learning & AI",
+    "UI/UX Design"
+  ],
+  "projects": [
+    {
+      "id": "m-ai-comvis",
+      "title": "Web-Based Personal Protective Equipment (PPE) Non-Compliance Detection System using YOLO Algorithm",
+      "category": ["Machine Learning & AI", "Software Development"],
+      "role": "Software Engineer & AI Engineer",
+      "image": "/src/assets/newassets/M-AI Comvis.webp",
+      "borderColor": "border-white-100",
+      "animation": "fade-right",
+      "techstack": ["Next.js", "Python", "FastAPI", "YOLOv11", "SQLite"],
+      "seeMoreLink": "",
+      "description": "Developed a **web-based PPE compliance monitoring system** that detects and records personal protective equipment violations for personnel entering a factory environment, with a compliance dashboard for reviewing violation records and tracking non-compliance.\n\nThe project began with field research through direct observation and interviews at a processing factory, to understand existing safety compliance challenges and translate them into a practical software solution. From there it was carried through the full cycle of **product research, modeling, development, deployment, and UAT**."
+    },
+    {
+      "id": "w-broiler",
+      "title": "Broiler Prediction System",
+      "category": ["Software Development"],
+      "image": "/src/assets/newassets/M-Smartfarm - Broiler Monitoring.webp",
+      "borderColor": "border-black-100",
+      "animation": "fade-left",
+      "techstack": ["Python", "Flask", "MQTT", "Firebase Auth", "SQL", "Docker"],
+      "seeMoreLink": "",
+      "githubLink": "https://github.com/affodilajF/broiler-prediction",
+      "role": "Backend Engineer",
+      "teamSize": "4 persons (1 backend, 1 mobile, 1 PM, 1 UI/UX)",
+      "overview": "The **Broiler Prediction System** assists poultry farms in monitoring key parameters such as temperature, humidity, and ammonia level, feed consumption, mortality, etc. By leveraging IoT sensors and AI models, the system **detects potential anomalies and helps maintain optimal environmental conditions in broiler houses.**",
+      "architecture": "The backend connects **IoT devices, AI model, and mobile systems** in a unified architecture. Sensor data are transmitted through an **MQTT broker**, processed by the **Flask backend**, and analyzed by trained **machine learning model**. The provided API endpoint is used by mobile system.",
+      "features": [
+        { "text": "Real-time Data Streaming via MQTT protocol" },
+        {
+          "text": "IoT Simulator for testing and development environments",
+          "link": "https://github.com/affodilajF/iot-virtual-device"
+        },
+        {
+          "text": "Automated Machine Learning Prediction scheduled at 09:00 and 16:00 WIB"
+        },
+        { "text": "Data Preprocessing & Storage with SQL database" },
+        { "text": "Auth using Firebase Auth" },
+        { "text": "FlaskAPI-based API Endpoints" }
+      ]
+    },
+    {
+      "id": "m-chickin-app",
+      "title": "Chickin Apps",
+      "category": ["Software Development"],
+      "role": "Full-Stack Mobile Developer Intern",
+      "image": "/src/assets/newassets/M-CHICKIN APP.webp",
+      "borderColor": "border-white-100",
+      "animation": "fade-right",
+      "techstack": ["Kotlin", "XML", "Realm Database"],
+      "seeMoreLink": "",
+      "overview": "**Chickin Apps** is a digital solution designed to help farmers manage their poultry farm operations more efficiently, productively, and effectively.\n\nThe platform enables farm owners to monitor daily operations and staff performance in real time, providing greater visibility and control over farm activities through its integrated features.",
+      "scope": [
+        "Conducted research and development on offline-first methodology, then designed and implemented a local NoSQL database to support mobile application requirements.",
+        "Improved and optimized existing application features to enhance functionality and user experience.",
+        "Collaborated with the QA team to identify, troubleshoot, and resolve application bugs.",
+        "Contributed to the development and maintenance of mobile application features across the full-stack mobile development processes."
+      ]
+    },
+    {
+      "id": "m-chickin-iot",
+      "title": "IoT Chickin App",
+      "category": ["Software Development"],
+      "role": "Mobile Developer Intern",
+      "image": "/src/assets/newassets/M-Chickin IoT.webp",
+      "borderColor": "border-black-100",
+      "animation": "fade-left",
+      "techstack": ["Kotlin", "MQTT"],
+      "seeMoreLink": "",
+      "overview": "**IoT Chickin App** is an Android-based application that helps farmers monitor and control poultry house environmental conditions and electrical energy usage in real time, using MQTT for communication between the application and IoT devices.",
+      "scope": [
+        "Developed sensor calibration and calibration reset features.",
+        "Developed sensor error detection and notification features.",
+        "Implemented the enable/disable functionality for temperature sensors.",
+        "Fixed and resolved bugs to improve application stability and reliability.",
+        "Worked with MQTT-based real-time communication between the Android application and IoT devices.",
+        "Cross-collaboration with PM, UI/UX, QA, Automation Engineer, and Backend."
+      ]
+    },
+    {
+      "id": "w-magna",
+      "title": "Magna Partners",
+      "category": ["UI/UX Design"],
+      "about": "**Magna Partners** is a collective network of organizations and youth communities, bringing together **8+ business units** across various sectors.",
+      "role": "UI/UX Designer",
+      "teamSize": "4 persons (2 UI/UX, 2 product)",
+      "image": "/src/assets/newassets/W-MAGNA.webp",
+      "borderColor": "border-white-100",
+      "animation": "fade-right",
+      "techstack": ["Figma"],
+      "seeMoreLink": "",
+      "scope": [
+        "UI/UX Design for the Company Profile.",
+        "UI/UX Design for Business Unit Profiles.",
+        "UI/UX Design for Event Management Admin Dashboard across each business unit."
+      ]
+    },
+    {
+      "id": "w-techfest",
+      "title": "Resik",
+      "category": ["UI/UX Design"],
+      "teamSize": "3 persons (3 UI/UX)",
+      "timeline": "~ 2 weeks",
+      "image": "/src/assets/newassets/W-Techfest.webp",
+      "borderColor": "border-black-100",
+      "animation": "fade-left",
+      "techstack": ["Figma"],
+      "seeMoreLink": "",
+      "overview": "**Resik** offers a practical answer to Indonesia's waste problem. It is an application for a waste bank company that operates branches across several Indonesian cities, turning a process that normally requires a trip into something people can do from home.\n\nThrough Resik, residents can **deposit recyclable waste and manage their waste bank savings without visiting a branch in person**, making recycling a routine habit rather than an errand.\n\n**3rd Winner** of the competition at Techfest 2022, held by HIMTI, Bina Nusantara University."
+    },
+    {
+      "id": "innisfree",
+      "title": "Innisfree",
+      "category": ["Web Development"],
+      "type": "College Project",
+      "image": "/src/assets/innisfree2.webp",
+      "borderColor": "border-white-100",
+      "animation": "fade-right",
+      "techstack": ["html", "css", "js"],
+      "seeMoreLink": "https://affodilajf.github.io/static-web-innisfree/",
+      "description": "Online shopping web. The website has two versions, a static build with HTML, CSS, JS and a dynamic one with Bootstrap and PHP MySQL."
+    },
+    {
+      "id": "kur-jogja",
+      "title": "KUR Jogja",
+      "category": ["Web Development"],
+      "type": "College Project | On Going",
+      "image": "/src/assets/api.webp",
+      "borderColor": "border-black-100",
+      "animation": "fade-right",
+      "techstack": ["laravel"],
+      "seeMoreLink": "",
+      "description": "As a backend developer, tasked to build a RESTful API for dashboard statistics and to migrate the codebase from Laravel 6 to Laravel 10."
+    },
+    {
+      "id": "hotelbook-ku",
+      "title": "HotelBook-Ku",
+      "category": ["Mobile Development"],
+      "type": "Personal Project | On Going",
+      "image": "/src/assets/hotelapp.webp",
+      "borderColor": "border-black-100",
+      "animation": "fade-right",
+      "techstack": ["react"],
+      "seeMoreLink": "https://github.com/affodilajF/HotelBooking-App",
+      "description": "A sleek and intuitive React Native UI designed to streamline the hotel booking experience, offering seamless navigation and visually appealing interfaces."
+    },
+    {
+      "id": "chatterbotica",
+      "title": "ChatterBotica",
+      "category": ["Mobile Development"],
+      "type": "Personal Project | On Going",
+      "image": "/src/assets/botica.webp",
+      "borderColor": "border-white-100",
+      "animation": "fade-up",
+      "techstack": ["kotlin", "jetpack"],
+      "seeMoreLink": "https://github.com/affodilajF/ChatterBotica-Android",
+      "description": "With Text-to-Speech and Speech-to-Text capabilities powered by the GPT model, it turns a smartphone into a conversational partner. It also supports image scanning, text extraction from images using ML Kit, and PDF generation. Built in Kotlin using Jetpack Compose, Dagger Hilt, Retrofit, MVVM, and the Repository Pattern."
+    },
+    {
+      "id": "fitcal",
+      "title": "FitCal",
+      "category": ["Mobile Development"],
+      "type": "College Project",
+      "image": "/src/assets/fitcal.webp",
+      "borderColor": "border-white-100",
+      "animation": "zoom-in-down",
+      "techstack": ["kotlin"],
+      "seeMoreLink": "https://github.com/affodilajF/FitCal-AplikasiCalorieTracker_UAS",
+      "description": "Streamlined Android app that simplifies calorie tracking. Crafted with Kotlin, utilizing Firebase Auth, Realtime DB, Room DB, Shared Preferences, and Notification."
+    },
+    {
+      "id": "medical-insurance-regression",
+      "title": "Prediction of Medical Insurance Charges using Multiple Linear Regression Model",
+      "category": ["Machine Learning & AI"],
+      "type": "College Project",
+      "image": "/src/assets/data.webp",
+      "borderColor": "border-black-100",
+      "animation": "zoom-in-down",
+      "techstack": ["python"],
+      "seeMoreLink": "https://www.canva.com/design/DAGG-BL1mwo/OhKKMN9zV7ytaaOUaI3mbg/view?utm_content=DAGG-BL1mwo&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+      "description": "Linear Regression Model for Medical Insurance Charges using Python."
+    }
+  ]
+}

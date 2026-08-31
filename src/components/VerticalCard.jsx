@@ -1,4 +1,4 @@
-import githubicon from "../assets/github-icons.png";
+import githubicon from "../assets/github-icons.webp";
 export default function VerticalCard({
   title,
   description,

@@ -1,7 +1,8 @@
 // import "./Navbar.css";
 
 import { Link } from "react-router-dom";
-import menuicon from "../assets/menuicon.png";
+import menuicon from "../assets/menuicon.webp";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = ({ scrollToDiv }) => {
   return (
@@ -45,11 +46,11 @@ const Navbar = ({ scrollToDiv }) => {
         </div>
         <a className="sm:text-lg text-md text-white-100">
           {" "}
-          Affodil | Mobile | Web{" "}
+          Affodil | Software Engineer{" "}
         </a>
       </div>
-      <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1  text-white-100">
+      <div className="navbar-end gap-2">
+        <ul className="menu menu-horizontal px-1 text-white-100 hidden lg:flex">
           <li
             onClick={() => scrollToDiv("about")}
             className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
@@ -84,6 +85,8 @@ const Navbar = ({ scrollToDiv }) => {
             </Link>
           </li>
         </ul>
+
+        <ThemeToggle />
       </div>
     </div>
     // --------------

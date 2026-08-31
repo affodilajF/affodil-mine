@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* colour tokens read by tailwind.config.js; .dark swaps them site-wide */
+:root {
+  --c-bgwhite: #f1f1f1;
+  --c-white-100: #ffffff;
+  --c-white-40: rgba(255, 255, 255, 0.4);
+  --c-purple-1: #3d0c54;
+  --c-purple-2: #4a3772;
+  --c-purple-5: #6433a1;
+  --c-black-100: #000000;
+}
+
+.dark {
+  --c-bgwhite: #14101f;
+  --c-white-100: #ede9f7;
+  --c-white-40: rgba(255, 255, 255, 0.07);
+  --c-purple-1: #e3d8f5;
+  --c-purple-2: #cabce9;
+  --c-purple-5: #b9a8de;
+  --c-black-100: #3a3350;
+}
+
 body {
   /* Hide horizontal scrollbar */
   /* overflow-x: hidden; */
@@ -26,8 +47,8 @@ body {
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #efefef;
+  color: var(--c-purple-1);
+  background-color: var(--c-bgwhite);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
