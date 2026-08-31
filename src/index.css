@@ -5,6 +5,7 @@
 /* colour tokens read by tailwind.config.js; .dark swaps them site-wide */
 :root {
   --c-bgwhite: #ffffff;
+  --c-panel: #f1f1f1;
   --c-white-100: #ffffff;
   --c-white-40: rgba(255, 255, 255, 0.4);
   --c-purple-1: #3d0c54;
@@ -15,6 +16,7 @@
 
 .dark {
   --c-bgwhite: #14101f;
+  --c-panel: #1c1730;
   --c-white-100: #ede9f7;
   --c-white-40: rgba(255, 255, 255, 0.07);
   --c-purple-1: #e3d8f5;

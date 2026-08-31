@@ -57,7 +57,7 @@ export default function ProjectModal({ project, onClose }) {
     >
       <div
         onClick={(event) => event.stopPropagation()}
-        className="relative bg-bgwhite w-full max-w-3xl my-8 rounded-2xl border border-white-100 p-6 md:p-10"
+        className="relative bg-panel w-full max-w-3xl my-8 rounded-2xl border border-white-100 p-6 md:p-10"
       >
         <button
           type="button"

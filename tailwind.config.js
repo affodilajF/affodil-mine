@@ -16,6 +16,7 @@ export default {
         40: "var(--c-white-40)",
       },
       bgwhite: "var(--c-bgwhite)",
+      panel: "var(--c-panel)",
       purple: {
         1: "var(--c-purple-1)",
         2: "var(--c-purple-2)",
