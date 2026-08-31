@@ -17,14 +17,8 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <MainScreen />
-      </div>
       <Routes>
-        <Route path="/" element={""} />
-        {/* <Route path="/about" Component={MainScreen} element={""} />
-        <Route path="/projects" Component={MainScreen} element={""} />
-        <Route path="/technologies" Component={MainScreen} element={""} /> */}
+        <Route path="/" element={<MainScreen />} />
       </Routes>
     </Router>
   );

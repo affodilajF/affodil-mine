@@ -1,14 +1,14 @@
-import htmlicons from "../assets/html.png";
-import cssicons from "../assets/css.png";
-import jsicons from "../assets/js.png";
-import laravelicons from "../assets/laravel.png";
-import pythonicons from "../assets/python.png";
-import javaicons from "../assets/java.png";
+import htmlicons from "../assets/html.webp";
+import cssicons from "../assets/css.webp";
+import jsicons from "../assets/js.webp";
+import laravelicons from "../assets/laravel.webp";
+import pythonicons from "../assets/python.webp";
+import javaicons from "../assets/java.webp";
 
-import composeicons from "../assets/jetpack.png";
-import kotlinicons from "../assets/kotlin.png";
-import reacticons from "../assets/react.png";
-import tailwindicons from "../assets/tailwind.png";
+import composeicons from "../assets/jetpack.webp";
+import kotlinicons from "../assets/kotlin.webp";
+import reacticons from "../assets/react.webp";
+import tailwindicons from "../assets/tailwind.webp";
 
 export default function Techstack() {
   return (
