@@ -5,14 +5,10 @@ import nighticon from "../assets/night.webp";
 
 const STORAGE_KEY = "theme";
 
-// remembered choice first, otherwise follow the operating system
+// remembered choice first, otherwise light
 function readInitialTheme() {
   const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === "dark" || stored === "light") return stored;
-
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  return stored === "dark" ? "dark" : "light";
 }
 
 export default function ThemeToggle() {

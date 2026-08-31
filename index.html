@@ -7,14 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Affodilaj Fadil</title>
     <script>
-      // apply the theme before first paint so the page never flashes light
+      // apply the remembered theme before first paint; light is the default
       (function () {
-        var stored = localStorage.getItem("theme");
-        var dark =
-          stored === "dark" ||
-          (!stored &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches);
-        if (dark) document.documentElement.classList.add("dark");
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.classList.add("dark");
+        }
       })();
     </script>
   </head>
