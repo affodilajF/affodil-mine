@@ -43,16 +43,9 @@ const Screen = () => {
         )
       );
 
-  const scrollToDiv = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   return (
     <div className="bg-bgwhite relative">
-      <Navbar scrollToDiv={scrollToDiv} />
+      <Navbar />
 
       <div className="circlePosition h-[300px] bg-bgpurple-2 rounded-full absolute top-[-80px] left-[20px] blur-[90px] w-[150px] sm:w-[380px] md:w-[400px]"></div>
 
@@ -199,7 +192,7 @@ const Screen = () => {
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center bg-bgpurple-1 text-white-100 p-4">
+    <div className="relative flex flex-col items-center bg-bgpurple-1 text-white-100 p-4">
       <a className="text-xs"> affodilaj fadil @2026 </a>
     </div>
   );

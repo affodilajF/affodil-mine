@@ -1,91 +1,17 @@
 // import "./Navbar.css";
 
-import { Link } from "react-router-dom";
-import menuicon from "../assets/menuicon.webp";
 import ThemeToggle from "./ThemeToggle";
 
-const Navbar = ({ scrollToDiv }) => {
+const Navbar = () => {
   return (
     <div className=" navbar backdrop-blur-sm bg-bgpurple-4 px-4 md:px-8 lg:px-16 sticky top-0 z-10 border-b  border-purple-3">
       <div className="md:navbar-center md:navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="lg:hidden">
-            <div className="mr-2">
-              <img src={menuicon} alt="" className="h-7 w-7" />
-            </div>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li onClick={() => scrollToDiv("about")}>
-              <Link
-                to="/about"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                About
-              </Link>
-            </li>
-            <li onClick={() => scrollToDiv("projects")}>
-              <Link
-                to="/projects"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                Projects
-              </Link>
-            </li>{" "}
-            <li onClick={() => scrollToDiv("techstack")}>
-              <Link
-                to="/technologies"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                Technologies
-              </Link>
-            </li>
-          </ul>
-        </div>
         <a className="sm:text-lg text-md text-white-100">
           {" "}
           Affodil | Software Engineer{" "}
         </a>
       </div>
-      <div className="navbar-end gap-2">
-        <ul className="menu menu-horizontal px-1 text-white-100 hidden lg:flex">
-          <li
-            onClick={() => scrollToDiv("about")}
-            className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
-          >
-            <Link
-              to="/about"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              About
-            </Link>
-          </li>
-          <li
-            onClick={() => scrollToDiv("projects")}
-            className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
-          >
-            <Link
-              to="/projects"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              Projects
-            </Link>
-          </li>{" "}
-          <li
-            onClick={() => scrollToDiv("techstack")}
-            className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... "
-          >
-            <Link
-              to="/techstack"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              Technologies
-            </Link>
-          </li>
-        </ul>
-
+      <div className="navbar-end">
         <ThemeToggle />
       </div>
     </div>
