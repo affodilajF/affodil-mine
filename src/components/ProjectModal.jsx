@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import IMAGES from "../assets/newassets/images";
 import GALLERIES from "../assets/newassets/galleries";
@@ -28,10 +28,52 @@ export default function ProjectModal({ project, onClose }) {
       ]
     : [];
   const [activeShot, setActiveShot] = useState(0);
+  const trackRef = useRef(null);
+
+  // the first shot sets the frame; every other one is contained inside it
+  const coverSrc = shots[0]?.src ?? null;
+  const [cover, setCover] = useState({ src: null, ratio: null });
+  const frameRatio = cover.src === coverSrc ? cover.ratio : null;
+
+  const measureCover = (node) => {
+    if (!node?.complete || !node.naturalHeight) return;
+
+    const ratio = node.naturalWidth / node.naturalHeight;
+    // bail out when unchanged, otherwise the ref callback would loop
+    setCover((prev) =>
+      prev.src === coverSrc && prev.ratio === ratio
+        ? prev
+        : { src: coverSrc, ratio }
+    );
+  };
+
+  // the scroll position is the source of truth; the index just follows it
+  const handleScroll = (event) => {
+    const { scrollLeft, clientWidth } = event.currentTarget;
+    setActiveShot(Math.round(scrollLeft / clientWidth));
+  };
+
+  const goToShot = (index) => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const clamped = Math.max(0, Math.min(index, shots.length - 1));
+    track.scrollTo({ left: clamped * track.clientWidth, behavior: "smooth" });
+  };
 
   useEffect(() => {
     const onKeyDown = (event) => {
       if (event.key === "Escape") onClose();
+      if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+
+      // read the position off the track so this stays independent of render state
+      const track = trackRef.current;
+      if (!track) return;
+
+      const current = Math.round(track.scrollLeft / track.clientWidth);
+      const next = event.key === "ArrowRight" ? current + 1 : current - 1;
+      const clamped = Math.max(0, Math.min(next, track.children.length - 1));
+      track.scrollTo({ left: clamped * track.clientWidth, behavior: "smooth" });
     };
 
     // keep the page behind the overlay from scrolling
@@ -68,32 +110,66 @@ export default function ProjectModal({ project, onClose }) {
           &times;
         </button>
 
-        <img
-          className="w-full rounded-xl border border-white-100"
-          src={shots[activeShot].src}
-          alt={shots[activeShot].label}
-        />
+        {/* swipe on touch, arrow keys on desktop; the frame follows the first shot */}
+        <div
+          ref={trackRef}
+          onScroll={handleScroll}
+          style={{ aspectRatio: frameRatio ?? 16 / 9 }}
+          className="flex w-full max-h-[75vh] snap-x snap-mandatory overflow-x-auto rounded-xl border border-white-100 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {shots.map((shot, index) => (
+            <img
+              key={shot.src}
+              ref={index === 0 ? measureCover : undefined}
+              onLoad={index === 0 ? (event) => measureCover(event.currentTarget) : undefined}
+              className="h-full w-full shrink-0 snap-center object-contain"
+              src={shot.src}
+              alt={shot.label}
+            />
+          ))}
+        </div>
 
         {shots.length > 1 ? (
-          <div className="flex flex-wrap gap-3 pt-3">
-            {shots.map((shot, index) => (
-              <button
-                key={shot.src}
-                type="button"
-                onClick={() => setActiveShot(index)}
-                title={shot.label}
-                aria-label={shot.label}
-                aria-pressed={index === activeShot}
-                className={`w-24 rounded-lg overflow-hidden border-2 transition-opacity ${
-                  index === activeShot
-                    ? "border-purple-3"
-                    : "border-white-100 opacity-60 hover:opacity-100"
-                }`}
-              >
-                <img className="w-full" src={shot.src} alt="" />
-              </button>
-            ))}
-          </div>
+          <>
+            {/* dots on phones, where swiping already does the navigating */}
+            <div className="flex justify-center gap-2 pt-3 md:hidden">
+              {shots.map((shot, index) => (
+                <button
+                  key={shot.src}
+                  type="button"
+                  onClick={() => goToShot(index)}
+                  title={shot.label}
+                  aria-label={shot.label}
+                  aria-pressed={index === activeShot}
+                  className={`h-2 rounded-full transition-all ${
+                    index === activeShot
+                      ? "w-6 bg-purple-3"
+                      : "w-2 bg-purple-5 opacity-40"
+                  }`}
+                />
+              ))}
+            </div>
+
+            <div className="hidden md:flex flex-wrap gap-3 pt-3">
+              {shots.map((shot, index) => (
+                <button
+                  key={shot.src}
+                  type="button"
+                  onClick={() => goToShot(index)}
+                  title={shot.label}
+                  aria-label={shot.label}
+                  aria-pressed={index === activeShot}
+                  className={`w-24 rounded-lg overflow-hidden border-2 transition-opacity ${
+                    index === activeShot
+                      ? "border-purple-3"
+                      : "border-white-100 opacity-60 hover:opacity-100"
+                  }`}
+                >
+                  <img className="w-full" src={shot.src} alt="" />
+                </button>
+              ))}
+            </div>
+          </>
         ) : null}
 
         <h2 className="font-bold text-purple-1 text-2xl lg:text-3xl pt-6">

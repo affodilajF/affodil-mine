@@ -51,4 +51,9 @@ export default {
     // eslint-disable-next-line no-undef
     // require("@tailwindcss/typography")
   ],
+  daisyui: {
+    // keep daisyUI on one theme; our own .dark class drives the palette
+    themes: ["light"],
+    darkTheme: "light",
+  },
 };

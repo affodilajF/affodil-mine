@@ -7,7 +7,7 @@
   "projects": [
     {
       "id": "m-ai-comvis",
-      "title": "Web-Based Personal Protective Equipment (PPE) Non-Compliance Detection System using YOLO Algorithm",
+      "title": "Web-Based Personal Protective Equipment (PPE) Non-Compliance Detection System using YOLO Algorithm (2026)",
       "category": ["Machine Learning & AI", "Software Development"],
       "role": "Software Engineer & AI Engineer",
       "image": "/src/assets/newassets/M-AI Comvis.webp",
@@ -19,7 +19,7 @@
     },
     {
       "id": "w-broiler",
-      "title": "Broiler Prediction System",
+      "title": "Broiler Prediction System (2025)",
       "category": ["Software Development"],
       "image": "/src/assets/newassets/M-Smartfarm - Broiler Monitoring.webp",
       "borderColor": "border-black-100",
@@ -47,7 +47,7 @@
     },
     {
       "id": "m-chickin-app",
-      "title": "Chickin Apps",
+      "title": "Chickin App (2024-2025)",
       "category": ["Software Development"],
       "role": "Full-Stack Mobile Developer Intern",
       "image": "/src/assets/newassets/M-CHICKIN APP.webp",
@@ -65,7 +65,7 @@
     },
     {
       "id": "m-chickin-iot",
-      "title": "IoT Chickin App",
+      "title": "Chickin IoT App (2024-2025)",
       "category": ["Software Development"],
       "role": "Mobile Developer Intern",
       "image": "/src/assets/newassets/M-Chickin IoT.webp",
@@ -85,7 +85,7 @@
     },
     {
       "id": "w-magna",
-      "title": "Magna Partners",
+      "title": "Magna Partners (2024-2025)",
       "category": ["UI/UX Design"],
       "about": "**Magna Partners** is a collective network of organizations and youth communities, bringing together **8+ business units** across various sectors.",
       "role": "UI/UX Designer",
@@ -103,7 +103,7 @@
     },
     {
       "id": "w-techfest",
-      "title": "Resik",
+      "title": "Resik (2022)",
       "category": ["UI/UX Design"],
       "teamSize": "3 persons (3 UI/UX)",
       "timeline": "~ 2 weeks",
