@@ -73,23 +73,25 @@ const Screen = () => {
           </div>
           <div className="pt-6" data-aos="fade-right" data-aos-duration="1200">
             <a className="text-sm text-purple-1">
-              An enthusiastic{" "}
-              <span className="font-bold">Software Engineering</span> graduate
-              from UGM. <br></br>
               <span className="font-bold text-4xl animate-pulse">
-                Software Engineer with a Testing Mindset{" "}
+                Software Engineer{" "}
               </span>
               <br></br>
+              An enthusiastic{" "}
+              <span className="font-bold">Software Engineering</span> graduate
+              from UGM.
               <br></br>
-              I build APIs and services with Go and Python, with a habit of
-              testing what I build.
               <br></br>
-              Additionally, my expertise in UI/UX design and visual art enhances
-              the value of the products I create.
+              I build APIs and services with Go and Python, with a focus on
+              developing reliable and practical software.
+              <br></br>
+              My background in UI/UX design and visual art complements my
+              engineering skills, allowing me to contribute across different
+              aspects of the products I build.
             </a>
           </div>
           <div className="mt-5">
-            <ContactIcon />
+            <ContactIcon icons={["linkedin", "github"]} />
           </div>
         </div>
 
@@ -159,6 +161,14 @@ const Screen = () => {
             <br></br>Ranging from illustration, digital painting, and 3D
             Modelling.
           </a>
+          <div className="flex justify-center pt-4">
+            <div className="inline-flex items-center gap-1 rounded-3xl border border-white-100 bg-white-40 backdrop-blur-md shadow-sm pl-6 pr-2 py-1.5">
+              <p className="text-sm font-bold text-purple-1 mr-2">
+                See more at :
+              </p>
+              <ContactIcon icons={["instagram", "behance"]} bare />
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-wrap justify-center pt-2">

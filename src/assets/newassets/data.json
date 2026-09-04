@@ -13,9 +13,9 @@
       "image": "/src/assets/newassets/M-AI Comvis.webp",
       "borderColor": "border-white-100",
       "animation": "fade-right",
-      "techstack": ["Next.js", "Python", "FastAPI", "YOLOv11", "SQLite"],
+      "techstack": ["Next.js", "Python", "FastAPI", "YOLOv11", "SQLite", "CVAT"],
       "seeMoreLink": "",
-      "description": "Developed a **web-based PPE compliance monitoring system** that detects and records personal protective equipment violations for personnel entering a factory environment, with a compliance dashboard for reviewing violation records and tracking non-compliance.\n\nThe project began with field research through direct observation and interviews at a processing factory, to understand existing safety compliance challenges and translate them into a practical software solution. From there it was carried through the full cycle of **product research, modeling, development, deployment, and UAT**."
+      "description": "Developed a **web-based PPE compliance monitoring system** that detects and records personal protective equipment violations for personnel entering a factory environment, with a compliance dashboard for reviewing violation records and tracking non-compliance.\n\nThe project began with field research through direct observation and interviews at a processing factory to understand existing safety compliance challenges and translate them into a practical software solution. I also collected CCTV footage from the factory environment and prepared the dataset through data annotation to support the development and evaluation of the detection system. **From there, the project was carried through the full cycle of product research, modeling, development, deployment, and UAT.**"
     },
     {
       "id": "w-broiler",
@@ -57,10 +57,12 @@
       "seeMoreLink": "",
       "overview": "**Chickin Apps** is a digital solution designed to help farmers manage their poultry farm operations more efficiently, productively, and effectively.\n\nThe platform enables farm owners to monitor daily operations and staff performance in real time, providing greater visibility and control over farm activities through its integrated features.",
       "scope": [
-        "Conducted research and development on offline-first methodology, then designed and implemented a local NoSQL database to support mobile application requirements.",
-        "Improved and optimized existing application features to enhance functionality and user experience.",
-        "Collaborated with the QA team to identify, troubleshoot, and resolve application bugs.",
-        "Contributed to the development and maintenance of mobile application features across the full-stack mobile development processes."
+        "Conducted research and development on **offline-first methodology**, then designed and implemented a **local NoSQL database** to support mobile application requirements.",
+        "Translated UI/UX designs into functional Android interfaces, maintaining consistency with design specifications.",
+        "Extended Android application capabilities through integration with an ERP system.",
+        "Identify, troubleshoot, and resolve application bugs.",
+        "Enhanced existing application features and introduced new capabilities to improve functionality and user experience.",
+        "Contributed to the development and maintenance of mobile application features across the full-stack mobile development process."
       ]
     },
     {
@@ -75,6 +77,7 @@
       "seeMoreLink": "",
       "overview": "**IoT Chickin App** is an Android-based application that helps farmers monitor and control poultry house environmental conditions and electrical energy usage in real time, using MQTT for communication between the application and IoT devices.",
       "scope": [
+        "Developed CO2 sensor control features.",
         "Developed sensor calibration and calibration reset features.",
         "Developed sensor error detection and notification features.",
         "Implemented the enable/disable functionality for temperature sensors.",
